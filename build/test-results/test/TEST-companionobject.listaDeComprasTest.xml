@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="companionobject.listaDeComprasTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-25T14:39:28" hostname="DESKTOP-Q392C4F" time="0.037">
+  <properties/>
+  <testcase name="removeItemTest()" classname="companionobject.listaDeComprasTest" time="0.037"/>
+  <system-out><![CDATA[Voce adicionou o Arroz da lista de compras! 
+Voce adicionou o Feijão da lista de compras! 
+Voce adicionou o Margarina da lista de compras! 
+Voce removeu o Arroz da lista de compras! 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

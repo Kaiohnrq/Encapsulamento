@@ -3,16 +3,17 @@ package companionobject
 
     object listaDeCompras{
 
-    private var listaDeCompras = mutableListOf<String>("Arroz", "Feijão", "Óleo")
+    private var _listaDeCompras = mutableListOf<String>()
+    var listaCompras: List <String> = _listaDeCompras
 
     fun addItem(produto: String){
-        listaDeCompras.add(produto)
+        _listaDeCompras.add(produto)
         println("Voce adicionou o $produto da lista de compras! ")
     }
 
     fun removeItem(produto: String){
-        if(listaDeCompras.contains(produto)) {
-            listaDeCompras.remove(produto)
+        if(_listaDeCompras.contains(produto)) {
+            _listaDeCompras.remove(produto)
             println("Voce removeu o $produto da lista de compras! ")
         } else {
             println("$produto não existe na lista de compras! ")
@@ -20,7 +21,7 @@ package companionobject
     }
 
     fun mostrarItem(){
-        listaDeCompras.forEach{
+        _listaDeCompras.forEach{
             println(it)
         }
     }
